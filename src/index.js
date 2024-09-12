@@ -9,7 +9,7 @@ import App from "./App";
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-const client = AgoraRTC.createClient({ mode: "rtc", codec: "vp8" });
+const client = AgoraRTC.createClient({ mode: "rtc", codec: "h264" });
 
 root.render(
   <StrictMode>
