@@ -3,7 +3,7 @@ import AgoraRTC from "agora-rtc-sdk-ng";
 import VirtualBackgroundExtension from "agora-extension-virtual-background";
 
 const VideoChat = () => {
-  const client = useRef(AgoraRTC.createClient({ mode: "rtc", codec: "vp8" }));
+  const client = useRef(AgoraRTC.createClient({ mode: "rtc", codec: "h264" }));
   const localVideoRef = useRef(null);
   const remoteVideoRef = useRef(null);
   const [localTracks, setLocalTracks] = useState({ videoTrack: null, audioTrack: null });
